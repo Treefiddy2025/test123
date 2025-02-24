@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Dogs on Lawn</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #2E7D32;
+            --accent: #81C784;
+            --dark: #1a1a1ad8;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/poopoodog-uchihMbs0QU9KmEKap7bMRRUynpdFs.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        
+
+        .header {
+            background-color: var(--dark);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.55);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .pricing-table {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .pricing-table tr:hover {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary);
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .features-list li {
+            margin: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="dogsonlawnLOGO.png" alt="Dogs on Lawn Logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="DoL">Home</a></li>
+            <li><a href="DOLservices.html">Services</a></li>
+            <li><a href="DOLabout.html">About</a></li>
+            <li><a href="DOLcontact.html">Contact</a></li>
+            <li><a href="DoL2.html">Get a Quote</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Professional Pet Waste Removal Services</h1>
+            <p>Keeping your lawn clean and healthy, one scoop at a time</p>
+        </section>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h2>Regular Clean-ups</h2>
+                <p>Scheduled waste removal service to keep your yard consistently clean</p>
+                <ul class="features-list">
+                    <li>Weekly service</li>
+                    <li>Bi-weekly service</li>
+                    <li>Monthly service</li>
+                    <li>Deodorizing treatment</li>
+                </ul>
+                <a href="dol2.html" class="cta-button">Schedule Service</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h2>One-time Clean-ups</h2>
+                <p>Perfect for special occasions or seasonal deep cleaning</p>
+                <ul class="features-list">
+                    <li>Complete yard cleaning</li>
+                    <li>Sanitization service</li>
+                    <li>Same-day service available</li>
+                    <li>No contract required</li>
+                </ul>
+                <a href="DoL2.html" class="cta-button">Book Now</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🦴</div>
+                <h2>Dog Toys</h2>
+                <p>Premium selection of durable and engaging toys</p>
+                <ul class="features-list">
+                    <li>Eco-friendly options</li>
+                    <li>Durable materials</li>
+                    <li>Interactive toys</li>
+                    <li>Safety tested</li>
+                </ul>
+                <a href="www.mikesbites.ca" class="cta-button">Shop Toys</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🥗</div>
+                <h2>Nutrition</h2>
+                <p>High-quality pet nutrition products and supplements</p>
+                <ul class="features-list">
+                    <li>Premium dog food</li>
+                    <li>Dietary supplements</li>
+                    <li>Nutritional consulting</li>
+                    <li>Special dietary needs</li>
+                </ul>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </div>
+
+        <section style="margin-top: 4rem;">
+            <h2>Service Pricing</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Frequency</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Regular Clean-up</td>
+                        <td>Weekly</td>
+                        <td>$15/visit</td>
+                    </tr>
+                    <tr>
+                        <td>Regular Clean-up</td>
+                        <td>Bi-weekly</td>
+                        <td>$35/visit</td>
+                    </tr>
+                    <tr>
+                        <td>Regular Clean-up</td>
+                        <td>Monthly</td>
+                        <td>$75/visit</td>
+                    </tr>
+                    <tr>
+                        <td>One-time Clean-up</td>
+                        <td>Single Visit</td>
+                        <td>From $45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
