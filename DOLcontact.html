@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dogs on Lawn</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #2E7D32;
+            --accent: #81C784;
+            --text: #333333;
+            --background: #FFFFFF;
+            --gray-light: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background-color: var(--gray-light);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 2rem auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin: 4rem 0;
+        }
+
+        .contact-form {
+            background: var(--background);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--secondary);
+        }
+
+        .team-section {
+            background-color: var(--gray-light);
+            padding: 4rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: var(--background);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .team-member-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .business-hours {
+            background: var(--background);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .hours-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        nav {
+            background-color: #33333300;
+            color: rgb(255, 255, 255);
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: rgba(11, 93, 185, 0.973);
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Our Professional Team</h1>
+            <p>We're here to help with all your lawn care needs</p>
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dog12.jpg-BsIWAzjQw5l14hlJ44gOFbvfdyFoH6.jpeg" alt="Professional dog with headset" class="hero-image">
+        </div>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="business-hours">
+                <h2>Business Hours</h2>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday</span> <span>9:00 AM - 6:00 PM</span></li>
+                    <li><span>Saturday</span> <span>10:00 AM - 4:00 PM</span></li>
+                    <li><span>Sunday</span> <span>Closed</span></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <h3>Contact Information</h3>
+                    <p>Email: woof@dogsonlawn.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: 123 Bark Avenue, Pawville, PW 12345</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Support Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dog13.jpg-tN23kogakJxs5HeGniiWBuiqimihvh.jpeg" alt="Support team member with glasses">
+                    <div class="team-member-info">
+                        <h3>Technical Support</h3>
+                        <p>Our tech expert is always ready to help with online bookings</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dog11.jpg-8WtA37m5k7NLmFqf90h5eIzUZ5VEqV.jpeg" alt="Support team member working">
+                    <div class="team-member-info">
+                        <h3>Customer Service</h3>
+                        <p>Providing excellent service with a pawsitive attitude</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+    /* Update the background image CSS */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/backgroundimage.jpg-QkMnFIRVY786KttGY6nmMA7aDj6Cjb.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+    /* Enhance contrast for better readability */
+    .section {
+        background-color: rgba(255, 255, 255, 0.97);
+    }
+    
+    .value-card {
+        background-color: rgba(245, 245, 245, 0.97);
+    }
+    
+    .partner-section {
+        background-color: rgba(245, 245, 245, 0.95);
+    }
+    
+    .hero {
+        background-color: rgba(245, 245, 245, 0.1);
+    }
+    </style>
+</html>
