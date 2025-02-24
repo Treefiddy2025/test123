@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Waste Removal Quote Request</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lab-poo.jpg-ofZPphIEKKdh5svX2Ro5r121tX3jvH.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.7);
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+            background: rgba(255, 255, 255, 1);
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        input[type="submit"]:hover:not(:disabled) {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        input[type="submit"]:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pooshepard-wW2KlN2R2qCuC2fMBNX5min2aqZmec.webp" alt="Dog Waste Removal Service" />
+            </div>
+            <h1>Free Quote!</h1>
+            <form action="https://formsubmit.co/worktorok@hotmail.com" method="POST" />
+            <form action="https://formsubmit.co/worktorok@hotmail.com" method="POST" id="quoteForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+
+                <label for="date">Date of Service:</label>
+                <input type="date" id="date" name="date" required aria-required="true">
+
+                <label for="time">Time of Service:</label>
+                <input type="time" id="time" name="time" required aria-required="true">
+
+                <label for="frequency">Service Frequency:</label>
+                <select id="frequency" name="frequency" required aria-required="true">
+                    <option value="">Select frequency</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="bi-weekly">Bi-weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+
+                <label for="sanitation">Sanitation Services:</label>
+                <select id="sanitation" name="sanitation" required aria-required="true">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+                <label for="dogs">Number of Dogs:</label>
+                <input type="number" id="dogs" name="dogs" min="1" required aria-required="true">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required aria-required="true">
+
+                <input type="hidden" name="_next" value="https://your-website.com">
+                <input type="hidden" name="_subject" value="New Dog Waste Removal Quote Request">
+
+                <input type="submit" value="Request Quote" id="submitButton">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var submitButton = document.getElementById('submitButton');
+            submitButton.value = 'Submitting...';
+            submitButton.disabled = true;
+
+            // FormSubmit will handle the actual form submission
+            this.submit();
+
+            // Show thank you message
+            alert('Thank you! We will be in touch soon!');
+
+            // Redirect to home page after a short delay
+            setTimeout(function() {
+                window.location.href = '/';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
+
