@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dogs on Lawn</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #2E7D32;
+            --accent: #81C784;
+            --dark: #1a1a1acb;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--dark);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background-color: var(--gray);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 4rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            padding: 2rem;
+            background-color: var(--gray);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .partner-section {
+            background-color: var(--gray);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="dogsonlawnLOGO.png" alt="Dogs on Lawn Logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="DOLservices.html">Services</a></li>
+            <li><a href="DOLabout.html">About</a></li>
+            <li><a href="DOLcontact.html">Contact</a></li>
+            <li><a href="DoL2.html">Get a Quote</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>About Dogs on Lawn</h1>
+            <p>Your trusted partner in pet waste management and pet wellness</p>
+        </section>
+
+        <section class="section">
+            <h2>Our Story</h2>
+            <p>At Dogs on Lawn, we understand that a clean yard is essential for both pet and family health. What started as a simple waste removal service has grown into a comprehensive pet wellness company, dedicated to making pet ownership easier and more enjoyable for everyone.</p>
+            <p>We've expanded our services to include premium nutritional products and partnerships with local businesses like MikesBites.ca, ensuring your furry friends get the very best in both care and products.</p>
+        </section>
+
+        <section class="section">
+            <h2>Our Mission</h2>
+            <p>We strive to create cleaner, healthier environments for pets and their families while promoting overall pet wellness through quality nutrition and enrichment products. Our commitment extends beyond waste removal to ensuring every aspect of your pet's life is happy and healthy.</p>
+        </section>
+
+        <section class="section">
+            <h2>Our Values</h2>
+            <div class="grid">
+                <div class="value-card">
+                    <h3>Environmental Responsibility</h3>
+                    <p>We use eco-friendly disposal methods and promote sustainable practices in all our services.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Pet Wellness</h3>
+                    <p>We believe in a holistic approach to pet health, from clean yards to proper nutrition.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Local Partnership</h3>
+                    <p>We support local businesses and artisans who share our commitment to quality pet products.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Nutrition & Products</h2>
+            <p>We carefully select and offer premium nutritional products that support your pet's health and wellbeing. Our product line includes:</p>
+            <ul style="margin: 1rem 0 1rem 2rem;">
+                <li>High-quality pet food formulations</li>
+                <li>Natural supplements for optimal health</li>
+                <li>Dietary supplements for specific health needs</li>
+                <li>Organic treat options</li>
+            </ul>
+        </section>
+
+        <section class="partner-section">
+            <h2>Proud Partnership with MikesBites.ca</h2>
+            <p>We're excited to partner with MikesBites.ca, a local artisanal pet toy maker known for their innovative and durable dog toys. This collaboration allows us to offer you unique, locally-made products that enhance your pet's playtime while supporting our local community.</p>
+            <div style="margin-top: 2rem;">
+                <h3>Featured MikesBites Products:</h3>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li>✓ Handcrafted durable toys</li>
+                    <li>✓ Eco-friendly materials</li>
+                    <li>✓ Custom-designed for different play styles</li>
+                    <li>✓ Locally made with love</li>
+                </ul>
+            </div>
+            <a href="www.mikesbites.ca" class="cta-button">Explore MikesBites Collection</a>
+        </section>
+
+        <section class="section">
+            <h2>Why Choose Dogs on Lawn?</h2>
+            <div class="grid">
+                <div class="value-card">
+                    <h3>Professional Service</h3>
+                    <p>Our trained team provides reliable, consistent service you can count on.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Comprehensive Care</h3>
+                    <p>From waste removal to nutrition, we cover all aspects of pet wellness.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Local Focus</h3>
+                    <p>We're proud to support and partner with local businesses in our community.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<style>
+    /* Add this to the existing CSS */
+    body {
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+        position: relative;
+    }
+    
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pooshepard-IANCUL3HhTYCipbgGzKKppCjL0EHE3.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    
+    /* Update section backgrounds for better contrast with the background image */
+    .section {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .value-card {
+        background-color: rgba(238, 234, 234, 0.527);
+    }
+    
+    .partner-section {
+        background-color: rgba(245, 245, 245, 0.95);
+    }
+    
+    .hero {
+        background-color: rgba(245, 245, 245, 0.95);
+    }
+    </style>
+    
+</html>
